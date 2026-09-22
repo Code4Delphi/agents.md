@@ -57,11 +57,22 @@ C:\Projeto\AGENTS.md
 
 ### 3. Subdiretórios
 Regras específicas do módulo. Quanto mais próximo do código, maior a prioridade
-
 ```
 C:\Projeto\Modulo\AGENTS.md
 ```
 
+### Estrutura hierárquica dos arquivos AGENTS.md
+```
+~/.codex/
+└── AGENTS.md              ← regras para todos os projetos
+
+MeuProjeto/
+├── AGENTS.md              ← regras específicas do projeto
+└── ModuloFinanceiro/
+    └── AGENTS.md          ← regras específicas desse módulo
+```
+
+> No **Codex** também é possível utilizar um arquivo **AGENTS.override.md** ele substitui o AGENTS.md existente no mesmo diretório.
 
 ## 📞 Contatos
 [![Telegram](https://img.shields.io/badge/Telegram-Join-blue?logo=telegram)](https://t.me/Code4Delphi)
