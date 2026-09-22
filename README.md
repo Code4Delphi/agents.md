@@ -39,14 +39,19 @@ __recovery/
 
 ## Os arquivos AGENTS.md podem ficar nos seguintes níveis:
 
-### 1. Global
-Regras pessoais aplicadas a todos os projetos
+### 1. Global. Regras pessoais aplicadas a todos os projetos
+Codex:
 ```
 C:\Users\SEU_USUARIO\.codex\AGENTS.md
 ```
 
 ```
 %USERPROFILE%\.codex\AGENTS.md
+```
+
+Claude code:
+```
+C:\Users\SEU_USUARIO\.claude\AGENTS.md
 ```
 
 ### 2. Raiz do projeto
@@ -62,6 +67,7 @@ C:\Projeto\Modulo\AGENTS.md
 ```
 
 ### Estrutura hierárquica dos arquivos AGENTS.md
+Codex:
 ```
 ~/.codex/
 └── AGENTS.md              ← regras para todos os projetos
@@ -72,7 +78,28 @@ MeuProjeto/
     └── AGENTS.md          ← regras específicas desse módulo
 ```
 
+Claude Code:
+```
+~/.claude/
+└── AGENTS.md              ← regras para todos os projetos
+
+MeuProjeto/
+├── AGENTS.md              ← regras específicas do projeto
+└── ModuloFinanceiro/
+    └── AGENTS.md          ← regras específicas desse módulo
+```
+
+
 > No **Codex** também é possível utilizar um arquivo **AGENTS.override.md** ele substitui o AGENTS.md existente no mesmo diretório.
+
+
+## Como usar
+1. Baixe ou copie o arquivo `AGENTS.md` deste repositório
+2. Coloque-o no diretório correspondente ao nível desejado: global, projeto ou módulo
+3. Edite o arquivo e adapte as regras às convenções e necessidades do seu projeto.
+4. Inicie uma nova sessão do seu agente  para que as instruções sejam carregadas.
+
+O Codex/Claude Code combina as instruções encontradas, dando prioridade ao arquivo mais próximo do diretório em que o trabalho está sendo realizado.
 
 ## 📞 Contatos
 [![Telegram](https://img.shields.io/badge/Telegram-Join-blue?logo=telegram)](https://t.me/Code4Delphi)
