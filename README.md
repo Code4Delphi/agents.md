@@ -1,4 +1,4 @@
-# AGENTS.md
+# AGENTS.md - Exemplo
 
 É um arquivo de instruções usado para orientar agentes de codificação de IA.
 
